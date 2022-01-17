@@ -24,7 +24,9 @@ class AddRecipeForm extends StatefulWidget {
 
 class _AddRecipeFormState extends State<AddRecipeForm> {
   final _formKey = GlobalKey<FormState>();
-
+  String recipeName = '';
+  String ingredients = '';
+  String instruction = '';
   @override
   Widget build(BuildContext context) {
     return Form(
