@@ -12,6 +12,17 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: const Color(0xfff4f3ee),
       appBar: AppBar(
         title: const Text('My Cuisine'),
+        actions: <Widget>[
+          Padding(
+            padding: const EdgeInsets.only(right: 25),
+            child: GestureDetector(
+                onTap: () {},
+                child: const Icon(
+                  Icons.search,
+                  size: 26,
+                )),
+          ),
+        ],
         //change background color to white
         backgroundColor: const Color(0xFF8A817C),
       ),
@@ -34,13 +45,13 @@ class HomeScreen extends StatelessWidget {
                   )),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.pushNamed(context, '/addRecipe');
-        },
-        backgroundColor: const Color(0xFFe0afa0),
-        child: const Icon(Icons.add),
-      ),
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: () {
+      //     Navigator.pushNamed(context, '/addRecipe');
+      //   },
+      //   backgroundColor: const Color(0xFFe0afa0),
+      //   child: const Icon(Icons.add),
+      // ),
       bottomNavigationBar: const BottomNavBar(),
     );
   }

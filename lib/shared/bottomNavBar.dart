@@ -11,9 +11,9 @@ class BottomNavBar extends StatelessWidget {
           BottomNavigationBarItem(
               icon: Icon(FontAwesomeIcons.home), label: 'Home'),
           BottomNavigationBarItem(
-              icon: Icon(FontAwesomeIcons.search), label: 'Search'),
+              icon: Icon(FontAwesomeIcons.heart), label: 'Favourite'),
           BottomNavigationBarItem(
-              icon: Icon(FontAwesomeIcons.star), label: 'Favourite'),
+              icon: Icon(FontAwesomeIcons.plus), label: 'Add'),
         ],
         fixedColor: const Color(0xffe0afa0),
         onTap: (int index) {
